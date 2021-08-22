@@ -1,0 +1,150 @@
+:root{
+    --color-intro-email-bg: hsl(217, 28%, 15%);  // (intro and email sign up background)
+    --color-main-bg: hsl(218, 28%, 13%) ;       //(main background)
+    --color-footer-bg: hsl(216, 53%, 9%) ;      //(footer background)
+    --color-testimonials-bg: hsl(219, 30%, 18%) ; // (testimonials background)
+
+    --color-cyan: hsl(176, 68%, 64%);   // (inside call-to-action gradient)
+    --color-blue: hsl(198, 60%, 50%);   //(inside call-to-action gradient)
+    --color-light-red: hsl(0, 100%, 63%);   // (error)
+
+    --color-intro-email-bg: hsl(217, 28%, 15%);
+    --color-main-bg: hsl(218, 28%, 13%);  
+    --color-footer-bg: hsl(216, 53%, 9%); 
+    --color-testimonials-bg: hsl(219, 30%, 18%); 
+
+    --color-cyan: hsl(176, 68%, 64%);
+    --color-blue: hsl(198, 60%, 50%);
+    --color-light-red: hsl(0, 100%, 63%);  
+
+// ### Neutral
+
+    --color-white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px=62.5%
+
+    @media (max-width:23.43em) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    position: relative;
+}
+
+.heading-1 {
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem 5rem;
+    line-height: 1.5;
+
+    @media (max-width:23.5em) {
+        font-size: 2.5rem;
+    }
+}
+
+.heading-2 {
+    font-size: 3.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem 5rem;
+    line-height: 1.5;
+
+    @media (max-width:23.5em) {
+        font-size: 2rem;
+    }
+}
+
+.heading-4 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+
+    @media (max-width:23.5em) {
+        font-size: 1.5rem;
+    }
+}
+
+.margin-bottom-huge {
+    margin-bottom: 16rem !important;
+}
+
+.margin-bottom-small {
+    margin-bottom: 2rem !important;
+}
+
+.paragraph {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: rgba(white,.9);
+    font-weight: 400;
+    line-height: 1.5;
+
+    @media (max-width:23.5em) {
+        font-size: 1.5rem;
+    }
+}
+
+.small-font-para {
+
+    line-height: 1.5;
+    font-family: 'Open sans',sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #eee;
+    margin: 0 1.5rem;
+
+    @media (max-width:23.5em) {
+        font-size: 1.3rem;
+        margin:0;
+    }
+}
+
+.btn {
+    border: none;
+    border-radius: 3.5rem;
+    padding: 2rem 8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--color-cyan),var(--color-blue));
+    color: white;
+    margin: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-cyan);
+    }
+
+    &:active{
+        transform: translateY(2px);
+    }
+
+    @media (max-width:23.5em) {
+        font-size: 1.5rem;
+        padding: 2rem 6rem !important;
+        margin: 3rem 1rem;
+    }
+}

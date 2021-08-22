@@ -1,0 +1,118 @@
+.header {
+    background-color: var(--color-intro-email-bg);
+    font-size: 1.4rem;
+    color: white;
+    padding: 5rem;
+    margin:0 auto;
+    margin-top: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url('../images/bg-curvy-desktop.svg'),
+                      linear-gradient(to bottom, var(--color-intro-email-bg),var(--color-main-bg));
+        
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+    &__heading {
+        align-self: center;
+        margin: 2rem 20%;
+    }
+
+    &__img {
+        padding-bottom: 2rem;
+        display: inline-block;
+        text-align: center;
+    }
+
+    &__para {
+        margin: 0 29%;
+    }
+    
+    &__btn {
+        margin-bottom: 16rem !important;
+    }
+
+    @media (max-width:75em) {
+        &__heading {
+            margin: 2rem 13%;
+        }
+
+        &__para {
+            margin: 0 22%;
+        }
+
+        &__img {
+            padding-bottom: 0;
+        }
+
+        &__btn {
+            margin-bottom: 8rem !important;
+        }
+    }
+
+    @media (max-width:56.25em) {
+        &__heading {
+            margin: 2rem;
+        }
+
+        &__para {
+            margin: 0 10rem;
+        }
+
+        &__img {
+            padding-bottom: 0;
+        }
+
+        &__btn {
+            margin-bottom: 2rem !important;
+        }
+    }
+
+    @media (max-width:50em) {
+
+        padding-left: 0;
+        padding-right: 0;
+
+        background-position: center;
+        &__heading {
+            margin: 1rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__para {
+            margin: 0 3rem;
+        }
+
+        
+        &__img {
+            width: 100%;
+            padding:5rem;
+        }
+
+        &__btn {
+            padding: 2rem 15rem;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    @media (max-width:23.5em) {
+        background-image: url('../images/bg-curvy-mobile.svg'),
+                          linear-gradient(to bottom, var(--color-intro-email-bg),var(--color-main-bg));
+        // background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:contain;
+
+     
+        &__heading {
+            font-size: 2.5rem;
+        }
+    }
+}
+

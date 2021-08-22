@@ -1,0 +1,45 @@
+.navigation {
+    background-color: var(--color-intro-email-bg);
+    font-family: 'Raleway', sans-serif;
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 5rem;
+
+    @media (max-width: 23.5em) {
+        padding:3rem 1.5rem;
+
+        grid-template-columns: 1fr 1fr;
+
+        &__logo {
+            width: 10rem;
+        }
+    }
+}
+
+.user-nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    &__link {
+        
+        text-decoration: none;
+        color: white;
+        // padding-right: 1rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__link:hover,
+    &__link:active {
+        color: var(--color-cyan);
+    }
+
+    @media (max-width:23.5em) {
+        justify-content: space-between;
+    }
+}
+
